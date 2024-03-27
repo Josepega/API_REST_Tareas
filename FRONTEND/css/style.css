@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font: weight 400;
+  font-style:normal;
+  width: 100%;
+  height:100vh;
+  background: linear-gradient(180deg, rgba(255,255,255,1) 15%, rgba(245,194,143,1) 100%);
+}
+header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+nav {
+  height: 100%;
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+
+  
+}
+
+.cabecera {
+  display: flex;
+
+  
+}
+
+.boton_content .titulo {
+  margin: auto;
+  width: 50%;
+  display: flex;
+
+}
+
+.icono_eliminar {
+  height: 25px;
+  border-radius: 10%;
+  box-shadow: 5px;
+  padding-right: 20px;
+  margin-left: 160px;
+}
+#icon_nav {
+  height: 25px;
+  border-radius: 10%;
+  box-shadow: 5px;
+  padding-left: 10px;
+  color: #ffffff;
+}
+
+#iconosPosit {
+  width: 100%;
+  text-align: right;
+  padding: 20px 15px 0px 0px;
+  font-size: 20px;
+  
+}
+.fa-regular.fa-trash-can {
+  color: #f35810;
+  cursor: pointer;
+  margin-left: 20px;
+}
+.fa-regular.fa-trash-can:hover {
+  color: #ecc091;
+}
+.fa-pen-to-square {
+  color: rgb(18, 141, 172);
+  cursor: pointer;
+}
+.fa-pen-to-square:hover {
+  color: #b4c6ed;
+}
+#contenedor {
+  width: 80%;
+  height: auto;
+  padding:10px;
+  margin-bottom: 40px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 16px;
+  box-shadow: 1px 1px 15px  rgb(202, 201, 201);
+  border: solid 2px rgb(238, 235, 235);
+}
+.contenedor_int {
+  width: 100%;
+  height:auto;
+  padding:10px 10px 40px 10px;
+  border-radius: 10px;
+  border: solid 2px rgb(238, 235, 235);
+  background-color: #a9bae6;
+  
+}
+
+#contenedorDatos {
+  flex-wrap: wrap;
+  display: flex;
+  height: auto;
+  justify-content: space-around;
+  
+}
+.indiv {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  height: 280px;
+  background-image: url("../img/post-it.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font: weight 400;
+  font-style:normal;
+  font-size: 14px;
+  padding: 50px 30px 30px 50px;
+  color: rgb(6, 69, 73);
+  margin-top: 20px;
+  
+
+}
+#mensajes, #mensajesEdicion {
+  color: #ed6246;
+  font-size: 20px;
+}
+
+input,
+select, textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  color: #2c70b0;
+}
+button {
+  display: flex;
+  background: #ee6f57;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: solid 1px #ed6246;
+  box-shadow: 1px 1px 5px gainsboro;
+  padding: 15px 10px;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font: weight 400;
+  font-style:normal;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  cursor: pointer;
+}
+.boton_content {
+  padding-top: 40px;
+}
+
+
+button:hover {
+  background: #ec4f2f;
+
+
+}
+.titulo {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: rgb(18, 141, 172);
+}
+.tituloNoTareas {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: rgb(255, 255, 255);
+
+}
+#titulo_tarea {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  color: #0b6dab;
+  padding-top: 10px;
+  padding-left: 20px;
+  
+
+}
+label {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: white;
+  padding-top: 10px;
+  padding-left: 50px;
+}
+::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  color: #ab580b;
+  padding-top: 10px;
+  padding-left: 20px;
+}
+span.close {
+  font-family: "Montserrat", sans-serif;
+  font: weight 100;
+  font-size: 30px;
+  color: #f35810;
+  padding-top: 0px;
+}
+.detalle {
+  font-family: "Montserrat", sans-serif;
+  font: weight 100;
+  font-style:normal;
+  font-size: 20px;
+  color:  #cf6f15
+
+}
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.col-100 {
+  width: 100%;
+  padding: 20px;
+}
+
+.col-75 {
+  width: 70%;
+  padding-left: 10px;
+}
+.col-50 {
+  width: 50%;
+}
+.col-30 {
+  width: 30%;
+  padding: 10px;
+}
+.col-25 {
+  width: 30%;
+}
+#descripcion, #descripcionED, #fecha_inicio,#fecha_inicioED, #fecha_final,#fecha_finalED, #estadoTarea, #estadoTareaED {
+  border: solid 1px rgb(248, 245, 245);
+  border-radius: 16px;
+  width: 100%;
+  resize:none;
+  outline: 0;
+  }
+  .swal-modal {
+    background-color:white;
+    border: 3px solid #a9bae6;
+    border-radius: 16px;
+  }
+  .swal-title {
+    margin: 0px;
+    font-size: 26px;
+    color: rgb(18, 141, 172);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.21);
+    margin-bottom: 28px;
+  }
+  .swal-button {
+    padding: 7px 19px;
+    border-radius: 12px;
+    background: #ee6f57;
+    font-size: 12px;
+    color: white;
+    border: 1px solid #f0f2f6;
+    text-shadow: 0px -1px 0px rgba(255, 255, 255, 0.3);
+  }
+  .swal-button:hover {
+    background-color: #ee6f57;
+  }
+ 
+  .swal-footer {
+    background-color:white;
+    margin-top: 32px;
+  
+  }

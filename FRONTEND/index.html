@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/lista.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
+    <script src="./js/modal.js" defer></script>
+    <script src="./js/index.js" defer></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>Gestor de Tareas: Isa, JosePe, Pedro</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <!-- Trigger/Open The Modal -->
+        <div class="titulo">
+          <img src="../frontend/img/cabecera_A.png" class="cabecera" />
+        </div>
+        <div class="titulo">
+          <img src="../frontend/img/cabecera_B.png" class="cabecera" />
+        </div>
+        <div class="boton_content">
+          <button id="myBtn">
+            Crear nueva tarea
+            <i class="fa-regular fa-pen-to-square" id="icon_nav"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+    <main id="contenedor">
+      <div class="contenedor_int">
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <div class="row">
+              <div class="col-75">
+                <p id="titulo_tarea">Descripción de la tarea... <i class="fa-solid fa-pencil fa-bounce" style="color: #ea6d1a;"></i></p>
+              </div>
+              <div class="col-30"><span class="close">&times;</span></div>              
+            </div>
+            <div class="row">
+              <div class="col-100">
+                <textarea id="descripcion" cols="50" rows="5" placeholder="Máximo 20 Carácteres"></textarea>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-30">
+                <label for="Fecha INICIO">Inicio</label>
+                <input type="date" name="" id="fecha_inicio"  />
+              </div>
+              <div class="col-30">
+                <label for="Fecha FIN">Fin</label>
+                <input type="date" name="" id="fecha_final" />
+              </div>
+              <div class="col-30">
+                <label for="">Estado</label>
+                <select name="" id="estadoTarea">
+                  <option value="" selected>SELECCIONA</option>
+                  <option value="Iniciada">Iniciada</option>
+                  <option value="Pendiente">Pendiente</option>
+                  <option value="Finalizada">Finalizada</option>
+                </select>
+              </div>
+             
+            </div> <div id="mensajes"></div>
+            <button type="button" id="GuardarTarea">Guardar Tarea!</button>
+            
+          </div>
+        </div>
+          <!-- Editar Modal -->
+            <!-- Editar Modal -->
+<div id="editarMODAL" class="modal">
+  <!-- Modal content -->
+  <div class="modal-contentED">
+    <div class="row">
+      <div class="col-70">
+        <p id="titulo_tarea">EDITAR Descripción de la tarea ...<i class="fa-solid fa-pencil fa-bounce" style="color: #ea6d1a;"></i></p>
+      </div>
+      <div class="col-30"><span class="close" id="EditarClose">&times;</span></div>              
+    </div>
+    <div class="row">
+      <div class="col-100">
+        <textarea id="descripcionED" cols="50" rows="5" placeholder="Máximo 20 Carácteres"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-30">
+        <label for="Fecha FIN">Inicio</label>
+        <input type="date"  id="fecha_inicioED"  />
+      </div>
+      <div class="col-30">
+        <label for="Fecha FIN">Fin</label>
+        <input type="date"  id="fecha_finalED" />
+      </div>
+      <div class="col-30">
+        <label for="Fecha FIN">Estado</label>
+        <select name="" id="estadoTareaED">
+          <option value="" selected>SELECCIONA</option>
+          <option value="Iniciada">Iniciada</option>
+          <option value="Pendiente">Pendiente</option>
+          <option value="Finalizada">Finalizada</option>
+        </select>
+      </div>
+    </div>
+    <div id="mensajesEdicion"></div>
+    <button type="button" id="EditarTarea">Editar Tarea!</button>
+  </div>
+</div>
+
+
+        <div id="contenedorDatos"></div>
+      </div>
+
+      
+    </main>
+    <footer></footer>
+  </body>
+</html>
+
